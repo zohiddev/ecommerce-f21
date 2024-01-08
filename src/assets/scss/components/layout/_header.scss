@@ -1,3 +1,6 @@
+.all{
+    background-color: #fff;
+}
 .header-Search input {
   width: 421px;
   height: 40px;
@@ -97,14 +100,12 @@
   gap: 5px;
   align-items: center;
 }
-.navbar {
-  display: flex;
-}
+
 .navbar-all {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 432px;
+justify-content: space-between;
   padding: 15px;
 }
 .navbar-all-1 {
@@ -148,4 +149,23 @@ p {
 a {
   font-family: sans-serif;
   font-weight: 500;
+}
+
+.header-img img{
+    width: 21.007px;
+height: 21px;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+
+}
+.header--logo{
+    width: 150px;
+height: 46px;
+}
+.header-selection{
+    outline: none;
 }

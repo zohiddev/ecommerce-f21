@@ -5,8 +5,9 @@ import Home from './Home'
 function Main() {
   return (
     <>
-    <Recommended />
     <Home />
+    <Recommended />
+    
     </>
   )
 }

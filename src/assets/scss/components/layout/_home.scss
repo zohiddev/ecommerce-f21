@@ -11,11 +11,7 @@ div img{
     flex-direction: column;
     gap: 23px;
 
-    .add-content{
-        width: 1480px;
-        flex-shrink: 0;
-        display: flex;
-    }
+
     
     .add-main{
         width: 388px;
@@ -121,4 +117,7 @@ div img{
         font-weight: 400;
         line-height: normal;        
     }
+}
+.add-content{
+    display: flex;
 }

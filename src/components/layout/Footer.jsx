@@ -25,16 +25,16 @@ function Footer() {
             <div className="footer-main__boxs">
               <div className="footer-main__box">
                 <div className="box-img">
-                  <img src="./public/img/footer-logo.png" alt="" />
+                 <button> <img src="./public/img/footer-logo.png" alt="" /></button>
                 </div>
                 <p className="box-text">Best information about the company gies here but now lorem ipsum is</p>
                 <div className="box-icons">
                   <>
-                  <FacebookIcon />
-                  <InIcon />
-                  <InstagramIcon />
-                  <TwitterIcon />
-                  <YoutubeIcon />
+               <button>   <FacebookIcon /></button>
+            <button>      <InIcon /></button>
+             <button>     <InstagramIcon /></button>
+               <button>   <TwitterIcon /></button>
+             <button>     <YoutubeIcon /></button>
                   </>
                 </div>
               </div>
@@ -70,8 +70,8 @@ function Footer() {
               <h5 className="box-title">Get app</h5>
               <div className="box-icons2">
                 <>
-                <AppstoreIcon />
-                <PlaymarketIcon />
+             <button>   <AppstoreIcon /></button>
+             <button>   <PlaymarketIcon /></button>
                 </>
               </div>
               </div>
@@ -83,12 +83,13 @@ function Footer() {
             <div className="footer-end__content">
               <p>© 2023 Ecommerce. </p>
               <div className="footer-end__content__language">
-                <img src="./public/img/use.png" alt="" />
-                <p>English</p>
-                <div className="footer-end__content__language_icon">
-                 <StrelkaIcon />
-                </div>
+                 <img src="./public/img/use.png" alt="" />
+            <select className='footer-end__content__language-select'>
+                <option>English</option>
+                <option>English</option>
+              </select>
               </div>
+             
             </div>
           </div>
         </div>
