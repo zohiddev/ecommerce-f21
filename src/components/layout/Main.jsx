@@ -5,9 +5,9 @@ import Banner from "./Banner";
 function Main() {
   return (
     <>
-      <Recommended />
-      <Home />
       <Banner />
+      <Home />
+      <Recommended />
     </>
   );
 }
