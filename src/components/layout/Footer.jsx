@@ -29,13 +29,21 @@ function Footer() {
                 </div>
                 <p className="box-text">Best information about the company gies here but now lorem ipsum is</p>
                 <div className="box-icons">
-                  <>
+                  <a href="https://www.facebook.com/?locale=ru_RU">
                   <FacebookIcon />
+                  </a>
+                  <a href="https://ru.linkedin.com/">
                   <InIcon />
+                  </a>
+                  <a href="https://www.instagram.com/">
                   <InstagramIcon />
+                  </a>
+                  <a href="https://twitter.com/?lang=ru">
                   <TwitterIcon />
+                  </a>
+                  <a href="https://www.youtube.com/">
                   <YoutubeIcon />
-                  </>
+                  </a>
                 </div>
               </div>
               <div className="footer-main__box">
@@ -69,10 +77,12 @@ function Footer() {
               <div className="footer-main__box">
               <h5 className="box-title">Get app</h5>
               <div className="box-icons2">
-                <>
-                <AppstoreIcon />
+                <a href="https://www.apple.com/app-store/">
+                  <AppstoreIcon />
+                </a>
+                <a href="https://play.google.com/store/apps?hl=ru&gl=US ">
                 <PlaymarketIcon />
-                </>
+                </a>
               </div>
               </div>
             </div>
@@ -97,4 +107,4 @@ function Footer() {
   )
 }
 
-export default Footer;
+export default Footer
