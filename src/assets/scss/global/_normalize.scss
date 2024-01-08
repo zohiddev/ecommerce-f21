@@ -6,10 +6,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 html,
 body {
     width: 100%;
     height: 100%;
+    background-color: #F7FAFC;
+
 }
 
 
@@ -18,6 +21,7 @@ button {
     background-color: transparent;
     border: none;
 }
+
 .wrapper{
     width: 100%;
     height: 100%;
