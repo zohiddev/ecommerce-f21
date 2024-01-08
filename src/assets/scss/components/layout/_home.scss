@@ -12,9 +12,9 @@ div img{
     gap: 23px;
 
     .add-content{
-        width: 1480px;
         flex-shrink: 0;
         display: flex;
+        margin-top: 32px;
     }
     
     .add-main{
@@ -44,7 +44,8 @@ div img{
             font-size: 20px;
             font-weight: 600;
             line-height: 130%;
-            letter-spacing: -0.2px;            
+            letter-spacing: -0.2px; 
+            margin-bottom: 20px;           
         }
 
         .add-main_button{
@@ -71,14 +72,21 @@ div img{
     width: 80%;
     display: flex;
     flex-wrap: wrap;
+    border: 2px solid #E0E0E0;
+    border-left: #FFF;
+    border-bottom-color: #F7FAFC;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 .product{
     width: 25%;
-    height: 127px;
+    height: 129px;
     flex-shrink: 0;
     display: flex;
-    border: 1px solid #606060;
+    border: 2px solid #E0E0E0;
+    border-right: none;
+    border-top: none;
     background: #FFF;
     padding: 10px 10px 5px 16px;
     align-items: center;
