@@ -1,8 +1,13 @@
 import React from 'react'
+import { AdSection, Banner, Recommended } from '../components'
 
 function Home() {
   return (
-    <div>Hello Amir</div>
+    <div className='home-page'>
+      <Banner />
+      <AdSection />
+      <Recommended />
+    </div>
   )
 }
 

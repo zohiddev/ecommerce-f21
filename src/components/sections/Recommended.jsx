@@ -1,19 +1,6 @@
 import React from 'react'
 
 function Recommended() {
-    function RecommendedBoxs(props){
-        return (
-            <div className="recommended-box">
-            <div className="recommended-img">
-                <img src={props.img} alt="" />
-            </div>
-            <div className="recommended-titles">
-                <h3 className="recommended-title">{props.title}</h3>
-                <p className='recommended-subtitle'>{props.subtitle}</p>
-            </div>
-        </div>
-        )
-    }
   return (
    <section className='recommended'>
     <div className="container">
@@ -54,7 +41,7 @@ function Recommended() {
                 </div>
                 <div className="recommended-titles">
                     <h3 className="recommended-title">$34.00</h3>
-                    <p className='recommended-subtitle'>Jeans bag for travel for men</p>
+                    <p className='recommended-subtitle'>Jeans bag for travelfor men</p>
                 </div>
             </div>
             <div className="recommended-box">
@@ -99,7 +86,7 @@ function Recommended() {
                 </div>
                 <div className="recommended-titles">
                     <h3 className="recommended-title">$10.30</h3>
-                    <p className='recommended-subtitle'>Blue wallet for men leather metarfial</p>
+                    <p className='recommended-subtitle'>Blue wallet for menleather metarfial</p>
                 </div>
             </div>
             <div className="recommended-box">

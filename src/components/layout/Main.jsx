@@ -1,14 +1,18 @@
 import React from "react";
-import Recommended from "./Recommended";
-import Home from "./Home";
-import Banner from "./Banner";
+import { Route,  Routes } from "react-router-dom";
+import { routes } from "../../constants/router";
+
 function Main() {
   return (
-    <>
-      <Recommended />
-      <Home />
-      <Banner />
-    </>
+    <main className="main">
+      <Routes>
+        {
+          routes.map(({path, id, component}) => (
+            <Route path={path} element={component} key={id}/>
+          ))
+        }
+      </Routes>
+    </main>
   );
 }
 

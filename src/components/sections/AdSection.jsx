@@ -1,7 +1,6 @@
 import React from 'react'
 
-function Home() {
-
+function AdSection() {
     const adds = [
         {
             id :1,
@@ -103,10 +102,10 @@ function Home() {
             img: "../../../public/images/a8.png"
         }
     ]
-
     
   return (
     <div className="add-contents">
+        <div className="container">
         <div className="add-content">
             <div className="add-main">
                 <h1 className="add-main_tytle">Home and outdoor</h1>
@@ -147,8 +146,9 @@ function Home() {
                 ))}
             </div>
         </div>
+        </div>
     </div>
   )
 }
 
-export default Home
+export default AdSection

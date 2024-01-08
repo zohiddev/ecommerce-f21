@@ -5,13 +5,11 @@ import logooo from "../../assets/icon/logoo.svg";
 import logoooo from "../../assets/icon/logoooo.svg";
 import logooooo from "../../assets/icon/logooooo.svg";
 import hamburger from "../../assets/icon/hamburger.svg";
-import usa from "../../assets/icon/icon.svg";
-import option from "../../assets/icon/option.svg";
 
 function Header() {
   return (
     <div className="all">
-      <div className="continer">
+      <div className="container">
         <header className="header">
           <div className="header-logo">
             <img className="header-hamburger" src={hamburger} alt="" />
@@ -62,7 +60,7 @@ function Header() {
         </header>
       </div>
       <div className="navbar">
-        <div className="continer">
+        <div className="container">
           <div className="navbar-all">
             <div className="navbar-all-1">
               <div className="navbar-1-block">
@@ -88,8 +86,8 @@ function Header() {
                 </select>
               </div>
               <div className="navbar-5-block">
-                <p>Ship to</p> <img src={usa} alt="" />{" "}
-                <img src={option} alt="" />
+                <p>Ship to</p> {" "}
+               
               </div>
             </div>
           </div>

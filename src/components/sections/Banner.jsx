@@ -1,5 +1,4 @@
-import bannerImage from "../../image/banner.png";
-import avatar from "../../assets/icons/avatar.png";
+
 import { NavLink } from "react-router-dom";
 function Banner() {
   return (
@@ -8,33 +7,33 @@ function Banner() {
         <div className="banner-row">
           <div className="banner-left">
             <ul className="banner-list">
-              <NavLink className="banner-list-item active">
+              <a className="banner-list-item active">
                 Automobiles{" "}
-              </NavLink>
-              <NavLink className="banner-list-item active">
+              </a>
+              <a className="banner-list-item active">
                 Clothes and wear{" "}
-              </NavLink>
-              <NavLink className="banner-list-item active">
+              </a>
+              <a className="banner-list-item active">
                 Home interiors{" "}
-              </NavLink>
-              <NavLink className="banner-list-item active">
+              </a>
+              <a className="banner-list-item active">
                 Computer and tech{" "}
-              </NavLink>
-              <NavLink className="banner-list-item active">
+              </a>
+              <a className="banner-list-item active">
                 Tools, equipments{" "}
-              </NavLink>
-              <NavLink className="banner-list-item active">
+              </a>
+              <a className="banner-list-item active">
                 Sports and outdoor
-              </NavLink>
-              <NavLink className="banner-list-item active">
+              </a>
+              <a className="banner-list-item active">
                 Animal and pets{" "}
-              </NavLink>
-              <NavLink className="banner-list-item active">
+              </a>
+              <a className="banner-list-item active">
                 Machinery tools{" "}
-              </NavLink>
-              <NavLink className="banner-list-item active">
+              </a>
+              <a className="banner-list-item active">
                 More category{" "}
-              </NavLink>
+              </a>
             </ul>
           </div>
           <div className="banner-center">
