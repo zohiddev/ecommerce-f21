@@ -1,8 +1,11 @@
 import React from 'react'
+import Recommended from './Recommended'
 
 function Main() {
   return (
-    <div></div>
+    <>
+    <Recommended />
+    </>
   )
 }
 
