@@ -1,5 +1,6 @@
 .banner{
     margin-top: 46px;
+    margin-bottom: 30px;
     &-right{
         padding: 0px 20px;
     }
@@ -7,14 +8,15 @@
         display: flex;
         align-items: center;
         background-color: #fff;
-        border: 1px solid #fff;
+        border: 1px solid #DEE2E7;
         border-radius: 8px;
+        gap: 20px;
         padding: 17px 20px 10px 14px;
     }
     &-list{
         display: flex;
         flex-direction: column;
-        gap: 18px;
+        gap: 4px;
         &-item{
             color:#505050;
             font-feature-settings: 'clig' off, 'liga' off;
@@ -22,7 +24,12 @@
             font-weight: 400;
             line-height: normal;
             cursor: pointer;
+            padding: 10px;
             width: 230px;
+            &:hover{
+                background-color: #E5F1FF;
+                border-radius: 6px;
+            }
         }
     }
     &-banner{
@@ -55,6 +62,12 @@
                 line-height: normal;
                 padding: 0px 16px;
                 height: 40px;
+                &:hover{
+                    background-color: #dedede;
+                }
+                &:active{
+                    background-color: #c5c5c5;
+                }
             }
         }
         &__image{
@@ -100,6 +113,14 @@
                     border-radius: 6px;
                     background-color:#0067FF;
                     color: #fff;
+                    transition: all 0.2s ease-in-out;
+                    &:hover{
+                        background-color: #fff;
+                        color: #0067FF;
+                    }
+                    &:active{
+                        background-color: #c5c5c5;
+                    }
                 }
                 &-btn2{
                     width: 180px;
@@ -109,6 +130,13 @@
                     border-radius: 6px;
                     background-color:#fff;
                     color: #0067FF;
+                    &:hover{
+                        background-color: #0067FF;
+                        color: #fFF;
+                    }
+                    &:active{
+                        background-color: #014bbb;
+                    }
                 }
             }
         }
