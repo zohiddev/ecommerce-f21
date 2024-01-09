@@ -1,7 +1,6 @@
 import React from 'react'
 
-function Home() {
-
+function AdSection() {
     const adds = [
         {
             id :1,
@@ -103,18 +102,20 @@ function Home() {
             img: "../../../public/images/a8.png"
         }
     ]
-
     
   return (
     <div className="add-contents">
-        <div className="add-content">
+        <div className="container">
+     <div className="content-all">
+     <div className="add-content">
             <div className="add-main">
                 <h1 className="add-main_tytle">Home and outdoor</h1>
                 <button className="add-main_button">Source now</button>
             </div>
             <div className="add-products">
                 {adds.map((add) => (
-                    <div className='product' key={add.id}>
+                 
+                      <div className='product' key={add.id}> <button className='df'>
                         <div className="products-content">
                             <h3 className="product-name">{add.name}</h3>
                             <span className="product-text">From</span>  <br />  
@@ -122,8 +123,9 @@ function Home() {
                         </div>
                         <div className="product_img">
                             <img src={add.img} alt="" />
-                        </div>
+                        </div> </button>
                     </div>
+                 
                 ))}
             </div>
         </div>
@@ -135,7 +137,9 @@ function Home() {
             <div className="add-products">
                 {adds1.map((add1) => (
                     <div className='product' key={add1.id}>
-                        <div className="products-content">
+
+                    <button className="df">
+                    <div className="products-content">
                             <h3 className="product-name">{add1.name}</h3>
                             <span className="product-text">From</span>  <br />  
                             <span className="product-text cost">USD  {add1.usd}</span>    
@@ -143,12 +147,16 @@ function Home() {
                         <div className="product_img">
                             <img src={add1.img} alt="" />
                         </div>
+                    </button>
+
                     </div>
                 ))}
             </div>
+        </div>
+     </div>
         </div>
     </div>
   )
 }
 
-export default Home
+export default AdSection

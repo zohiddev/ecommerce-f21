@@ -6,7 +6,7 @@ import TwitterIcon from '../../../public/icons/TwitterIcon';
 import YoutubeIcon from '../../../public/icons/YoutubeIcon';
 import AppstoreIcon from '../../../public/icons/AppstoreIcon';
 import PlaymarketIcon from '../../../public/icons/PlaymarketIcon';
-import StrelkaIcon from '../../../public/icons/StrelkaIcon';
+
 
 function Footer() {
   return (
@@ -25,16 +25,16 @@ function Footer() {
             <div className="footer-main__boxs">
               <div className="footer-main__box">
                 <div className="box-img">
-                 <button> <img src="./public/img/footer-logo.png" alt="" /></button>
+                <button>  <img src="./public/img/footer-logo.png" alt="" /></button>
                 </div>
                 <p className="box-text">Best information about the company gies here but now lorem ipsum is</p>
                 <div className="box-icons">
                   <>
-               <button>   <FacebookIcon /></button>
-            <button>      <InIcon /></button>
-             <button>     <InstagramIcon /></button>
-               <button>   <TwitterIcon /></button>
-             <button>     <YoutubeIcon /></button>
+              <button>    <FacebookIcon /></button>
+                <button>  <InIcon /></button>
+               <button>   <InstagramIcon /></button>
+                 <button> <TwitterIcon /></button>
+                 <button> <YoutubeIcon /></button>
                   </>
                 </div>
               </div>
@@ -70,8 +70,8 @@ function Footer() {
               <h5 className="box-title">Get app</h5>
               <div className="box-icons2">
                 <>
-             <button>   <AppstoreIcon /></button>
-             <button>   <PlaymarketIcon /></button>
+               <button> <AppstoreIcon /></button>
+              <button>  <PlaymarketIcon /></button>
                 </>
               </div>
               </div>
@@ -83,13 +83,12 @@ function Footer() {
             <div className="footer-end__content">
               <p>© 2023 Ecommerce. </p>
               <div className="footer-end__content__language">
-                 <img src="./public/img/use.png" alt="" />
-            <select className='footer-end__content__language-select'>
-                <option>English</option>
-                <option>English</option>
-              </select>
+                <img src="./public/img/use.png" alt="" />
+                <select>
+                  <option>English</option>
+                  <option>English</option>
+                </select>
               </div>
-             
             </div>
           </div>
         </div>

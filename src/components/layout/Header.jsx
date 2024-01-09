@@ -6,7 +6,6 @@ import logoooo from "../../assets/icon/logoooo.svg";
 import logooooo from "../../assets/icon/logooooo.svg";
 import hamburger from "../../assets/icon/hamburger.svg";
 
-
 function Header() {
   return (
     <div className="all">
@@ -14,7 +13,7 @@ function Header() {
         <header className="header">
           <div className="header-logo">
             <img className="header-hamburger" src={hamburger} alt="" />
-            <img  className="header--logo" src={logo} alt="" />
+           <button> <img src={logo} alt="" /></button>
           </div>
           <div className="header-Search-selection-button">
             <div className="header-Search">
@@ -31,32 +30,40 @@ function Header() {
             </div>
           </div>
           <div className="header-img-text-all">
-            <button className="header-img-textt">
+           <button>
+           <div className="header-img-textt">
               <div className="header-img">
                 <img className="respnsiw" src={logoo} alt="" />
               </div>
               <div className="header-text">Profile</div>
-            </button>
-            <button className="header-img-text">
+            </div>
+           </button>
+          <button>
+          <div className="header-img-text">
               <div className="header-img">
                 <img src={logooo} alt="" />
               </div>
               <div className="header-text">Message</div>
-            </button>
-            <button className="header-img-text">
+            </div>
+          </button>
+         <button>
+         <div className="header-img-text">
               <div className="header-img">
                 <img src={logoooo} alt="" />
               </div>
               <div className="header-text">Orders</div>
-            </button>
-            <button className="header-img-textt">
+            </div>
+         </button>
+          <button>
+          <div className="header-img-textt">
               <div className="header-img">
                 {" "}
                 <img src={logooooo} alt="" />
-              
+                
               </div>
               <div className="header-text">My cart</div>
-            </button>
+            </div>
+          </button>
           </div>
         </header>
       </div>
@@ -65,8 +72,8 @@ function Header() {
           <div className="navbar-all">
             <div className="navbar-all-1">
               <div className="navbar-1-block">
-              <button>  <img src={hamburger} alt="" /></button>
-                <p>All category</p>
+             <button>   <img src={hamburger} alt="" /></button>
+              <button>  <p>All category</p></button>
               </div>
               <div className="navbar-2-block">
                 <a href="#">Hot offers</a>
@@ -88,7 +95,7 @@ function Header() {
               </div>
               <div className="navbar-5-block">
                 <p>Ship to</p> {" "}
-            
+               
               </div>
             </div>
           </div>

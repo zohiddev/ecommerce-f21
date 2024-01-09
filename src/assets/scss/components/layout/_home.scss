@@ -1,21 +1,22 @@
 @import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
 
 
-div img{
-    width: 100%;
-    height: 100%;
-}
 
-.add-contents{
+
+.add-contents {
     display: flex;
     flex-direction: column;
     gap: 23px;
 
+    .add-content {
+        width: 1180px;
+        flex-shrink: 0;
+        display: flex;
+    }
 
-    
-    .add-main{
-        width: 388px;
-        height: 260px;
+    .add-main {
+        width: 380px;
+        height: 254px;
         flex-shrink: 0;
         width: 20%;
         opacity: 0.8;
@@ -27,23 +28,21 @@ div img{
         border-top-left-radius: 5px;
         border-bottom-left-radius: 5px;
 
-        &.two{
+        &.two {
             background: url(../../../../../public/images/ADD1.png);
         }
 
 
-        .add-main_tytle{
+        .add-main_tytle {
             width: 130px;
-            color: var(--base-color-dark, #1C1C1C);
-            font-feature-settings: 'clig' off, 'liga' off;
-            font-family: Inter ,sans-serif;
+            font-family: sans-serif;
             font-size: 20px;
             font-weight: 600;
             line-height: 130%;
-            letter-spacing: -0.2px;            
+            letter-spacing: -0.2px;
         }
 
-        .add-main_button{
+        .add-main_button {
             display: inline-flex;
             height: 40px;
             padding: 0px 16px;
@@ -53,9 +52,7 @@ div img{
             gap: 10px;
             flex-shrink: 0;
             border-radius: 6px;
-            border: 1px solid var(--white, #FFF);
             background: var(--white, #FFF);
-            box-shadow: 0px 1px 2px 0px rgba(56, 56, 56, 0.08);                        
         }
     }
 }
@@ -63,29 +60,29 @@ div img{
 
 
 
-.add-products{
+.add-products {
     width: 80%;
     display: flex;
     flex-wrap: wrap;
 }
 
-.product{
+.product {
     width: 25%;
     height: 127px;
     flex-shrink: 0;
     display: flex;
-    border: 1px solid #606060;
+    border: 1px solid #E0E0E0;
     background: #FFF;
     padding: 10px 10px 5px 16px;
     align-items: center;
 
-    &-content{
+    &-content {
         display: flex;
         flex-direction: column;
         margin-right: 27px;
     }
 
-    &_img{
+    &_img {
         display: flex;
         width: 80px;
         height: 80px;
@@ -96,28 +93,37 @@ div img{
         background: #FFF;
     }
 
-    &-name{
+    &-name {
         width: 138px;
         color: var(--base-color-dark, #1C1C1C);
         font-feature-settings: 'clig' off, 'liga' off;
-        font-family: Inter , sans-serif;
+        font-family: Inter, sans-serif;
         font-size: 16px;
         font-style: normal;
         font-weight: 400;
-        line-height: normal;        
+        line-height: normal;
     }
 
-    &-text{
+    &-text {
         width: 97.953px;
         color: var(--gray-500, #8B96A5);
         font-feature-settings: 'clig' off, 'liga' off;
-        font-family: Inter , sans-serif;
+        font-family: Inter, sans-serif;
         font-size: 13px;
         font-style: normal;
         font-weight: 400;
-        line-height: normal;        
+        line-height: normal;
     }
 }
-.add-content{
+
+.content-all {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    width: 1080px;
+
+}
+.df{
     display: flex;
 }
