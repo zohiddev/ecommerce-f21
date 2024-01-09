@@ -1,5 +1,7 @@
 import React from 'react'
-import LockIcon from "../../src/assets/icon/LockIcon";
+import LockIcon from '../../public/icons/LockIcon';
+import MessageIcon from '../../public/icons/MessageIcon';
+import CarIcon from '../../public/icons/CarIcon'
 function ProductPage() {
   const products = [
     {
@@ -36,6 +38,26 @@ function ProductPage() {
       option2: "Qty: 3",
     }
   ];
+  const footer = [
+    {
+      id: 1,
+      icon: <LockIcon />,
+      title: "Secure Payment",
+      subtitle: "Have you ever finally just"
+    },
+    {
+      id: 2,
+      icon: <MessageIcon />,
+      title: "Customer support",
+      subtitle: "Have you ever finally just"
+    },
+    {
+      id: 3,
+      icon: <CarIcon />,
+      title: "Free delivery",
+      subtitle: "Have you ever finally just"
+    }
+  ]
   return (
     <section className="product">
       <div className="container">
@@ -73,15 +95,27 @@ function ProductPage() {
 
           }
           <div className="product-btns">
-          <button className='product-btn'>Bact to shop</button>
+            <button className='product-btn'>Bact to shop</button>
             <button className='product-btn__one'>Remove all</button>
           </div>
         </div>
-        <div className="product-footer">
-          <div className="product-footer__icon">
-            <img src={<LockIcon/>} alt="" />
-          </div>
-        </div>
+        {
+          footer.map((item) => (
+            <div className="product-footer" key={item.id}>
+              <div className="product-footer__wrap">
+              <div className="product-footer__icon">
+                {item.icon}
+              </div>
+              <div className="product-footer__titles">
+                <h3 className='product-footer__title'>
+                  <h3 className='product-footer__title'>{item.title}</h3>
+                  <p className='product-footer__subtitle'>{item.subtitle}</p>
+                </h3>
+              </div>
+              </div>
+            </div>
+          ))
+        }
       </div>
     </section>
   )
