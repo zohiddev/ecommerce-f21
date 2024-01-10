@@ -1,4 +1,4 @@
-.product {
+.products {
     width: 100%;
     height: 100%;
     background-color: #F7FAFC;
@@ -55,7 +55,7 @@
         margin-left: 9px;
     }
 
-    &s {
+    &ss {
         display: flex;
     }
 
@@ -154,6 +154,15 @@
         padding: 30px 0;
         column-gap: 10px;
 
+        &__wrapper{
+            display: flex;
+            gap: 55px;
+        }
+        &__wrap {
+            display: flex;
+            column-gap: 10px;    
+        }
+
         &__title {
             color: #1C1C1C;
             font-size: 16px;
@@ -171,5 +180,147 @@
         }
     }
 
+    .products-saved{
+        border-radius: 6px;
+        border: 1px solid #DEE2E7;
+        background: #FFF;
+        padding: 20px;
+        margin-bottom: 20px;
 
+        &__title{
+            color: #1C1C1C;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 140%; 
+            letter-spacing: -0.2px;
+            margin-bottom: 20px;
+        }
+
+        &__boxs{
+            display: flex;
+            column-gap: 20px;
+        }
+        &__box__img{
+            width: 270px;
+            height: 240px;
+            flex-shrink: 0;
+            border-radius: 6px;
+            border: 1px solid #eee;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
+
+            img{
+                width: 194px;
+                height: 194px;
+            }
+            }
+            &__box__texts{
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+
+                h5{
+                    color: #1C1C1C;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                }
+                p{
+
+                    color: #606060;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 150%; 
+                    letter-spacing: -0.2px;
+                }
+        }
+        &__box__button{
+            display: flex;
+            align-items: center;
+            width: 156.58px;
+            height: 40px;
+            padding: 9px 16.08px 9px 9px;
+            gap: 12.5px;
+            flex-shrink: 0;
+            border-radius: 6px;
+            border: 1px solid var(--gray-300, #DEE2E7);
+            background: var(--white, #FFF);
+            color: var(--primary, #0D6EFD);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+    }
+
+    .products-super__discount{
+        width: 100%;
+        height: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 8px;
+        background: #005ADE;
+        padding-right: 45px;
+        margin-bottom: 40px;
+
+        button{
+            width: 108px;
+            height: 40px;
+            display: inline-flex;
+            padding: 0px 16px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-shrink: 0;
+            border-radius: 6px;
+            background: #FF9017;
+            color: #FFF;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            
+        }
+
+        &__right{
+            padding-left: 30px;
+            width: 745px;
+            height: 120px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex-shrink: 0;
+            background-color:  #237CFF;
+            border-radius: 69% 31% 100% 0% / 0% 100% 0% 100% ;
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px;
+            h3{
+                color: #FFF;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 133.333%;
+                letter-spacing: -0.2px;
+                margin-bottom: 3px;
+            }
+            p{
+                color: #FFF;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+        }
+    }
+    &-wrapper{
+        display: flex;
+    }
 }
