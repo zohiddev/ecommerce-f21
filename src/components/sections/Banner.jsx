@@ -1,54 +1,64 @@
+import { useEffect, useState } from "react"
+import { Link } from "react-router-dom"
 
-import { NavLink } from "react-router-dom";
 function Banner() {
+
+  const [categories, setCategories] = useState([])
+  const [banner, setBanner] = useState([])
+
+
+  function fetchCategories() {
+    fetch('https://ecommerce.main-gate.appx.uz/dev/v1/category/list').then(function (response) {
+      return response.json()
+    }).then(function (json) {
+      setCategories(json.categories)
+    })
+  }
+
+  function fetchBanners(){
+    fetch('https://ecommerce.main-gate.appx.uz/dev/v1/events/list').then(function(response){
+      return response.json()
+    }).then(function(json){
+      setBanner(json.events)
+    })
+  }
+
+  useEffect(function () {
+    fetchCategories()
+    fetchBanners()
+  }, [])
+
   return (
     <section className="banner">
       <div className="container">
         <div className="banner-row">
           <div className="banner-left">
             <ul className="banner-list">
-              <a className="banner-list-item active">
-                Automobiles{" "}
-              </a>
-              <a className="banner-list-item active">
-                Clothes and wear{" "}
-              </a>
-              <a className="banner-list-item active">
-                Home interiors{" "}
-              </a>
-              <a className="banner-list-item active">
-                Computer and tech{" "}
-              </a>
-              <a className="banner-list-item active">
-                Tools, equipments{" "}
-              </a>
-              <a className="banner-list-item active">
-                Sports and outdoor
-              </a>
-              <a className="banner-list-item active">
-                Animal and pets{" "}
-              </a>
-              <a className="banner-list-item active">
-                Machinery tools{" "}
-              </a>
-              <a className="banner-list-item active">
-                More category{" "}
-              </a>
+              {
+                categories.length === 0 ? <p className="banner-list-item">Loading...</p> : categories.map(item => (
+                  <Link to='/categories' className="banner-list-item active" key={item.id}>
+                    {item.name_uz}
+                  </Link>
+                ))
+              }
             </ul>
           </div>
           <div className="banner-center">
-            <div className="banner-banner">
+          {
+              banner.length === 0 ? null : <div className="banner-banner">
               <div className="banner-banner__info">
                 <h3 className="banner-banner__info-toptitle">
-                  Latest trending
+                  {banner[1].title_uz}
                 </h3>
                 <h2 className="banner-banner__info-title">Electronic items</h2>
                 <button className="banner-banner__info-btn">Learn more</button>
               </div>
               <div className="banner-banner__image">
-                <img src="./images/banner.png" alt="" />
+                <img src={banner[1].image} alt="" />
               </div>
             </div>
+            }
+            
           </div>
           <div className="banner-right">
             <div className="banner__content">
