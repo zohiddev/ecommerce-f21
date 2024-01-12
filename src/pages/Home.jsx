@@ -1,5 +1,5 @@
 import React from 'react'
-import { AdSection, Banner, Recommended } from '../components'
+import { AdSection, Banner, Recommended,  } from '../components'
 
 function Home() {
   return (

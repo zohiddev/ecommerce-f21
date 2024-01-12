@@ -4,5 +4,5 @@ import Main from "./layout/Main";
 import Banner from "./sections/Banner";
 import Recommended from "./sections/Recommended";
 import AdSection from "./sections/adSection";
-
-export {Header, Footer, Main, Banner, AdSection, Recommended}
+import HeaderLink from "./sections/HeaderLink";
+export {Header, Footer, Main, Banner, AdSection, Recommended,HeaderLink,}
