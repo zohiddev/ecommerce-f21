@@ -31,4 +31,4 @@ function AppstoreIcon() {
   )
 }
 
-export default AppstoreIcon
+export default AppstoreIcon;

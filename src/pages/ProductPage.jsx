@@ -1,8 +1,8 @@
 import React from 'react'
-import LockIcon from '../../public/icons/LockIcon';
-import MessageIcon from '../../public/icons/MessageIcon';
-import CarIcon from '../../public/icons/CarIcon'
-import ShopIcon from '../../public/icons/ShopIcon';
+import LockIcon from '../assets/icon/LockIcon';
+import MessageIcon from '../assets/icon/MessageIcon';
+import CarIcon from '../assets/icon/CarIcon'
+import ShopIcon from '../assets/icon/ShopIcon';
 import Productssuper from '../components/Productssuper';
 function ProductPage() {
   const products = [
@@ -130,25 +130,25 @@ function ProductPage() {
         </div>
           <div className="products-item">
             <div className="products-item__top">
-              <p>Have a coupon?</p>
+              <p >Have a coupon?</p>
              <div className="products-item__buttons">
              <input type="text" placeholder='Add coupon' />
-             <button className='products-item__button'>Apply</button>
+             <button>Apply</button>
              </div>
 
             </div>
             <div className="products-item__bottom">
               <div className="products-item__wrap">
                 <p className='products-item__title'>Subtotal:</p>
-                <p className='products-item__title'>$1403.97</p>
+                <p className='products-item__subtitle'>$1403.97</p>
               </div>
               <div className="products-item__wrap">
                 <p className='products-item__title'>Discount:</p>
-                <p className='products-item__title'>- $60.00</p>
+                <p className='products-item__subtitle2'>- $60.00</p>
               </div>
               <div className="products-item__wrap">
-                <p className='products-item__title'>Tax::</p>
-                <p className='products-item__title'>+ $14.00</p>
+                <p className='products-item__title'>Tax:</p>
+                <p className='products-item__subtitle3'>+ $14.00</p>
               </div>
               <hr />
               <div className="products-item__wrap">
@@ -158,9 +158,6 @@ function ProductPage() {
               <button>Checkout</button>
 
               <div className="products-item__bottom__icons">
-                <>
-                <Misc
-                </>
               </div>
             </div>
           </div>
@@ -211,4 +208,4 @@ function ProductPage() {
   )
 }
 
-export default ProductPage
+export default ProductPage;
