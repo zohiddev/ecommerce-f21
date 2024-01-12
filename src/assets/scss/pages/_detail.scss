@@ -1,23 +1,6 @@
 .detail{
     margin-bottom: 20px;
     &__col{
-        &__header{
-            display: flex;
-            align-items: center;
-            gap: 28px;
-            padding: 20px 0px;
-            &-link{
-                color:  #8B96A5;
-                font-size: 16px;
-                font-weight: 400;
-                line-height: 150% ;
-                letter-spacing: -0.2px;
-
-                &:hover{
-                    color: #000000;
-                }
-            }
-        }
         &__detail{
             &__row{
                 display: flex;
@@ -245,6 +228,177 @@
                         line-height: 150%;
                         letter-spacing: -0.1px;
                     }
+                }
+            }
+        }
+        &__info{
+            margin-top: 20px;
+            font-size: 16px;
+            font-weight: 500;
+            &__row{
+                display: flex;
+                justify-content: space-between;
+            }
+            
+            &__info{
+                border: 1px solid #DEE2E7;
+                border-radius: 6px;
+
+            }
+            &__header{
+                &__list{
+                    display: flex;
+                    gap: 24px;
+                    padding: 16px 0px;
+                    padding-left: 20px;
+                    border-bottom: 1px solid #DEE2E7;
+                }
+                &__item{
+                    color:  #8B96A5;
+                }
+
+            }
+            &__body{
+                padding: 20px;
+                &__info{
+                    margin-bottom: 24px;
+                    &-text{
+                        max-width: 800px;
+                        color:  #505050;
+                        font-weight: 400;
+                        line-height: 150%; 
+                        letter-spacing: -0.2px;
+                    }
+                }
+                &__wrap{
+                    display: flex;
+                    border: 1px solid #DEE2E7;
+                    max-width: 710px;
+                }
+                &__lefttitle{
+                    border-right: 1px solid #DEE2E7 ;
+                    &-item{
+                        color: #505050;
+                        font-weight: 400;
+                        background-color: #EFF2F4;
+                        border-bottom: 1px solid #DEE2E7;
+                        padding: 10px 145px 7px 10px;
+                    }
+                }
+                &__righttitle{
+                    &-item{
+                        color: #505050;
+                        font-weight: 400;
+                        border-bottom: 1px solid #DEE2E7;
+                        padding: 10px 275px 7px 10px;
+                        letter-spacing: -0.2px;
+                    }
+                }
+                &__check{
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 25px;
+                    gap: 10px;
+                    &__wrap{
+                        display: flex;
+                        align-items: center;
+                        gap: 7px;
+                        img{
+                            width: 20px;
+                            height: 20px;
+                        }
+                        p{
+                            color:  #505050;
+                            font-weight: 400;
+                            letter-spacing: -0.2px;
+                        }
+                    }
+                }
+            }
+            &__products{
+                display: flex;
+                flex-direction: column;
+                border: 1px solid #DEE2E7 ;
+                gap: 10px;
+                height: 100%;
+                border-radius: 6px;
+                padding: 20px 20px 40px 20px;
+                &__wrap{
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    cursor: pointer;
+                }
+                &__title{
+                    color: #1C1C1C;
+                    font-weight: 400;
+                    line-height: 150%;
+                    letter-spacing: -0.2px;
+                    max-width: 150px;
+                }
+                &__price{
+                    color:  #8B96A5;
+                    font-weight: 400;
+                    line-height: 150%;
+                    letter-spacing: -0.2px;
+                }
+                &__image{
+                    border-radius: 6px;
+                    border: 1px solid  #E0E0E0;
+                    background-color: #FFF;
+                    width: 80px;
+                    height: 80px;
+                    padding: 10px;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+        &__product{
+            border-radius: 6px;
+            border: 1px solid  #DEE2E7;
+            background-color: #FFF;
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+            padding: 20px 26px 33px 22px;
+            &__wrap{
+                display: flex;
+                gap: 20px;
+            }
+            &-wrap{
+                display: flex;
+                flex-direction: column;
+                gap: 14px;
+                cursor: pointer;
+            }
+            &__toptitle{
+                margin-bottom: 15px;
+            }
+            &-title{
+                font-weight: 400;
+                color: #505050;
+                margin-bottom: 4px;
+            }
+            &-text{
+                color: #8B96A5;
+                font-weight: 400;
+
+            }
+            &__image{
+                width: 172px;
+                height: 172px;
+                flex-shrink: 0;
+                border-radius: 6px;
+                background-color: #EEE;
+                mix-blend-mode: multiply;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    padding: 20px;
+                    background-color: #EEE;
                 }
             }
         }

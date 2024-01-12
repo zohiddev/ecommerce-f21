@@ -1,0 +1,21 @@
+.link{
+    &__col{
+        &__header{
+            display: flex;
+            align-items: center;
+            gap: 28px;
+            padding: 20px 0px;
+            &-link{
+                color:  #8B96A5;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 150% ;
+                letter-spacing: -0.2px;
+
+                &:hover{
+                    color: #000000;
+                }
+            }
+        }
+    }
+}
