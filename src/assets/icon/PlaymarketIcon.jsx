@@ -29,4 +29,4 @@ function PlaymarketIcon() {
   )
 }
 
-export default PlaymarketIcon
+export default PlaymarketIcon;

@@ -1,12 +1,13 @@
 import React from 'react'
-import FacebookIcon from '../../../public/icons/FacebookIcon';
-import InIcon from '../../../public/icons/InIcon';
-import InstagramIcon from '../../../public/icons/InstagramIcon';
-import TwitterIcon from '../../../public/icons/TwitterIcon';
-import YoutubeIcon from '../../../public/icons/YoutubeIcon';
-import AppstoreIcon from '../../../public/icons/AppstoreIcon';
-import PlaymarketIcon from '../../../public/icons/PlaymarketIcon';
-import StrelkaIcon from '../../../public/icons/StrelkaIcon';
+import FacebookIcon from '../../assets/icon/FacebookIcon';
+import InIcon from '../../assets/icon/InIcon';
+import InstagramIcon from '../../assets/icon/InstagramIcon';
+import TwitterIcon from '../../assets/icon/TwitterIcon';
+import YoutubeIcon from '../../assets/icon/YoutubeIcon';
+import AppstoreIcon from '../../assets/icon/AppstoreIcon';
+import PlaymarketIcon from '../../assets/icon/PlaymarketIcon';
+import StrelkaIcon from '../../assets/icon/StrelkaIcon';
+
 
 function Footer() {
   return (
@@ -81,7 +82,7 @@ function Footer() {
                   <AppstoreIcon />
                 </a>
                 <a href="https://play.google.com/store/apps?hl=ru&gl=US ">
-                <PlaymarketIcon />
+                 <PlaymarketIcon />
                 </a>
               </div>
               </div>
