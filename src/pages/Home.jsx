@@ -5,7 +5,7 @@ function Home() {
   return (
     <div className='home-page'>
       <Banner />
-      <AdSection />
+      {/* <AdSection /> */}
       <Recommended />
     </div>
   )

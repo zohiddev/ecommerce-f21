@@ -1,4 +1,4 @@
-import { Home, Categories, ProductPage, CartPage, NotFoundPage } from "../pages"
+import { Home, Categories, ProductPage, CartPage, NotFoundPage,DetailPage } from "../pages"
 
 export const routes = [
     {
@@ -23,6 +23,11 @@ export const routes = [
     },
     {
         id: 5,
+        path: '/detail',
+        component: <DetailPage/>
+    },
+    {
+        id: 6,
         path: '*',
         component: <NotFoundPage/>
     },
