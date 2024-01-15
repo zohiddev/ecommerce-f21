@@ -3,7 +3,6 @@ import ArrowRightIcon from '../../assets/icons/ArrowRightIcon'
 
 function HeaderDropdown({isActive, categories}) {
   const [activeCategory, setActiveCategory] = useState(null)
-  console.log(categories)
   if(!categories && !activeCategory){
     return null
   }

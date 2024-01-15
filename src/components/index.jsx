@@ -3,6 +3,9 @@ import Footer from "./layout/Footer";
 import Main from "./layout/Main";
 import Banner from "./sections/Banner";
 import Recommended from "./sections/Recommended";
-import AdSection from "./sections/adSection";
 import HeaderLink from "./sections/HeaderLink";
-export {Header, Footer, Main, Banner, AdSection, Recommended,HeaderLink,}
+import AdSection from "./sections/AdSection";
+import TimeSection from "./sections/TimeSection";
+import SendRequestSection from "./sections/SendRequestSection";
+import Categories from './layout/Categories'
+export {Header, Footer, Main, Banner, AdSection, Recommended,HeaderLink,TimeSection,SendRequestSection,Categories}
