@@ -1,5 +1,5 @@
-
 import { NavLink } from "react-router-dom";
+
 function Banner() {
   return (
     <section className="banner">
