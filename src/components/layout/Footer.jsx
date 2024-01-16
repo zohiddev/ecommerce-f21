@@ -47,7 +47,8 @@ function Footer() {
                   </a>
                 </div>
               </div>
-              <div className="footer-main__box">
+      <div className="footre-link-all">
+      <div className="footer-main__box">
                 <h5 className="box-title">About</h5>
                 <a href="#" className="box-link">About Us</a>
                 <a href="#" className="box-link">Find store</a>
@@ -86,6 +87,7 @@ function Footer() {
                 </a>
               </div>
               </div>
+      </div>
             </div>
           </div>
         </div>

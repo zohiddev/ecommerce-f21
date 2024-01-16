@@ -221,8 +221,73 @@ p, a {
     &__item{
       &:not(:last-child){
         margin-bottom: 8px;
+        
       }
     }
   }
 
+}
+.navbar-Search{
+  display: none;
+}
+.header-btn{
+  display: none;
+}
+.navbar-sorche-btn{
+  display: none;
+}
+@media screen and (max-width:360px){
+  .header-Search-selection-button{
+    display: none;
+  }
+  .header-btn{
+    display: flex;
+    gap: 20px;
+  }
+  .header-img-text-all{
+    display: none;
+  }
+  .navbar-Search{
+    display: flex;
+ 
+height: 40px;
+flex-shrink: 0;
+border:  1px solid #DEE2E7;
+background-color: #f7fafc;
+align-items: center;
+padding:  0 0 0 10px ;
+  }
+  .navbar-Search img{
+    width: 22px;
+    height: 22px;
+    flex-shrink: 0;
+  }
+  .navbar-Search input{
+    width: 226px;
+    height: 19px;
+    border: none;
+    background-color: #f7fafc;
+  }
+  .navbar-all{
+    display: none;
+  }
+  .navbar-sorche-btn{
+    display: flex;
+    padding: 20px 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+  }
+  .navbar-btn{
+    display: flex;
+  gap: 10px;
+  }
+  .navbar-btn button{
+    width: 102.758px;
+height: 36px;
+background-color: #DEE2E7;
+border-radius: 6px;
+color: #0d6efd;
+  }
 }
