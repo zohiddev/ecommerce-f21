@@ -6,9 +6,12 @@
         padding: 20px 0;
 
     }
-    .SendRequestSection-all{
+    &-all{
         width: 100%;
         height: 100%;
+    }
+    &-name-text-1-button{
+        display: none;
     }
 
     &-name-info-block {
@@ -123,9 +126,7 @@ input::placeholder {
     padding: 0 10px;
     color: #000;
 }
-.SendRequestSection-name-text-1-button{
-    display: none;
-}
+
 @media screen and (max-width:360px){
     .SendRequestSection-info-block{
         display: none;

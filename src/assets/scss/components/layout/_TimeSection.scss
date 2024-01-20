@@ -109,13 +109,19 @@
         font-weight: 500;
 
     }
+    &-card-all{
+    display: flex;
 }
-.calendar-bg-card-all{
-    display: none;
 }
+.calendar{
 
-.calendar-mini-block {
-    display: none;
+    &-bg-card-all{
+        display: none;
+    }
+    
+    &-mini-block {
+        display: none;
+    }
 }
 
 @media screen and (max-width:360px) {
@@ -207,5 +213,6 @@
         width: 140px;
         height: 180px;
     }
+ 
    
 }
