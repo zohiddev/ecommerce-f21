@@ -12,9 +12,10 @@ div img{
     gap: 23px;
 
     .add-content{
-        width: 1480px;
+        width: 1180px;
         flex-shrink: 0;
         display: flex;
+        
     }
     
     .add-main{
@@ -78,10 +79,11 @@ div img{
     height: 127px;
     flex-shrink: 0;
     display: flex;
-    border: 1px solid #606060;
+    border: 1px solid #e4e4e4;
     background: #FFF;
     padding: 10px 10px 5px 16px;
     align-items: center;
+    
 
     &-content{
         display: flex;
@@ -92,7 +94,7 @@ div img{
     &_img{
         display: flex;
         width: 80px;
-        height: 80px;
+        height: 60px;
         padding: 5.467px 11.298px;
         justify-content: center;
         align-items: center;
@@ -120,5 +122,45 @@ div img{
         font-style: normal;
         font-weight: 400;
         line-height: normal;        
+    }
+}
+.home-page-all{
+    display: none;
+}
+@media screen and (max-width:360px){
+    .home-page-all{
+        display: flex;
+       
+        flex-direction: column;
+    }
+    .home-page-h1{
+        color: var(--dark, #1C1C1C);
+font-feature-settings: 'clig' off, 'liga' off;
+
+/* Title-h5 */
+font-family: sans-serif;
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+    }
+    .home-page-button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+        padding: 19px 0;
+        color: #0D6EFD;
+    }
+    .home-page-button img{
+        width: 22px;
+        height: 22px;
+        flex-shrink: 0;
+    }
+    .content-all{
+        display: none;
+    }
+    .block-home-alll{
+        display: flex;
     }
 }

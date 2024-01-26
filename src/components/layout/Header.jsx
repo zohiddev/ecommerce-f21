@@ -8,6 +8,7 @@ import hamburger from "../../assets/icon/hamburger.svg";
 import HeaderDropdown from "./HeaderDropdown";
 import CloseIcon from "../../assets/icons/CloseIcon";
 import MenuIcon from "../../assets/icons/MenuIcon";
+import search from '../../assets/icon/search.svg'
 import { Link } from "react-router-dom";
 
 function Header() {
@@ -59,32 +60,43 @@ function Header() {
             </div>
           </div>
           <div className="header-img-text-all">
-            <div className="header-img-textt">
+           <button>
+           <div className="header-img-textt">
               <div className="header-img">
                 <img className="respnsiw" src={logoo} alt="" />
               </div>
               <div className="header-text">Profile</div>
             </div>
-            <div className="header-img-text">
+           </button>
+           <button>
+           <div className="header-img-text">
               <div className="header-img">
                 <img src={logooo} alt="" />
               </div>
               <div className="header-text">Message</div>
             </div>
-            <div className="header-img-text">
+           </button>
+          <button>
+          <div className="header-img-text">
               <div className="header-img">
                 <img src={logoooo} alt="" />
               </div>
               <div className="header-text">Orders</div>
             </div>
-            <div className="header-img-textt">
+          </button>
+          <button>  <div className="header-img-textt">
               <div className="header-img">
                 {" "}
                 <img src={logooooo} alt="" />
               </div>
               <div className="header-text">My cart</div>
+            </div></button>
+          
+          </div> 
+           <div className="header-btn">
+            <button><img src={logooooo} alt="" /></button>
+            <button><img className="respnsiw" src={logoo} alt="" /></button>
             </div>
-          </div>
         </header>
       </div>
       <div className="navbar">
@@ -120,6 +132,17 @@ function Header() {
               </div>
             </div>
           </div>
+         <div className="navbar-sorche-btn">
+         <div className="navbar-Search">
+         <img src={search} alt="" />
+          <input type="text" />
+          </div>
+          <div className="navbar-btn">
+            <button>All category</button>
+            <button>Gadgets</button>
+            <button>Clocthes</button>
+          </div>
+         </div>
         </div>
       </div>
 
