@@ -18,13 +18,8 @@ export const routes = [
     },
     {
         id: 4,
-        path: '/product',
+        path: '/product/:slug',
         component: <ProductPage/>
-    },
-    {
-        id: 5,
-        path: '/detail',
-        component: <DetailPage/>
     },
     {
         id: 6,
