@@ -14,4 +14,4 @@ function Productssuper() {
   )
 }
 
-export default Productssuper
+export default Productssuper;

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { AdSection, Banner, Recommended, SendRequestSection, TimeSection, Categories } from '../components'
 
+
 function Home() {
 
   const [recommendedProducts, setRecommendedProducts] = useState([])
@@ -24,7 +25,6 @@ function Home() {
       <Banner />
       <TimeSection />
       <AdSection />
-
       <SendRequestSection />
       <Recommended products={recommendedProducts} />
       <Categories />

@@ -114,7 +114,7 @@ function CartPage() {
                 </div>
                 <div className="products-option">
                   <h3 className='products-price'>{item.price}</h3>
-                  <select name="select" id="" className='products-select'>
+                  <select name="select" id="" className='product-select'>
                     <option value="select" className='products-option'>{item.option}</option>
                     <option value="select" className='products-option'>{item.option1}</option>
                     <option value="select" className='products-option'>{item.option2}</option>
