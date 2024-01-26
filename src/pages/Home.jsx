@@ -1,11 +1,11 @@
 import React from 'react'
-import { AdSection, Banner, Recommended } from '../components'
+import { AdSection, Banner, Recommended,  } from '../components'
 
 function Home() {
   return (
     <div className='home-page'>
       <Banner />
-      <AdSection />
+      {/* <AdSection /> */}
       <Recommended />
     </div>
   )
